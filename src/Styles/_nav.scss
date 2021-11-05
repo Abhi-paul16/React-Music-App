@@ -1,0 +1,24 @@
+.navbar {
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    button {
+        padding: 0.5rem;
+        border: 2px solid rgb(27, 27, 27);
+        background: transparent;
+        outline: none;
+        transition: all 0.3 ease;
+        cursor: pointer;
+        &:hover {
+            background: rgb(65, 65, 65);
+            color: rgb(255, 255, 255);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    button {
+        z-index: 10;
+    }
+}
